@@ -19,6 +19,15 @@ Clozer::Application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port: 587,
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["MAILCHIMP_ID"],
+    password:  ENV["APTJOY_MANDRILL_KEY"]
+  }
+
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
 
