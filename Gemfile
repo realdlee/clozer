@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use postgresql as the database for Active Record
-# gem 'pg'
+gem 'pg' #, '0.17.1'
 #installed via homebrew
 
 # Use SCSS for stylesheets
