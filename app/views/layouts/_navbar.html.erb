@@ -1,17 +1,49 @@
 <header class="navbar navbar-fixed-top bs-docs-nav>" role="banner" data-user_signed_in="<%= signed_in? ? 'true' : 'false' %>">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#masthead">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%#= link_to "Clozer", root_url, :class => "navbar-brand" %>
-    </div>
-    <nav id="masthead" class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <%= link_to "Sign in", new_user_session_path, class: "text-right" %>
-      <%#= render 'layouts/navbar_right' %>
-    </nav>
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#corporate-navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="logo" class="navbar-brand" href="/" onClick=""><img alt="Clozer logo" src="" /></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="corporate-navbar">
+    <ul class="nav navbar-nav">
+      <!--<li>-->
+      <!--<a href="/#customers-homepage" class="smooth">Customers</a>-->
+      <!--</li>-->
+      <li>
+        <a href="/#product" class="smooth" onClick="">Product</a>
+      </li>
+      <li>
+        <a href="/#pricing" class="smooth" >Pricing</a>
+      </li>
+      <li>
+        <a href="/#features" class="smooth">Features</a>
+      </li>
+      <!-- <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/accountants" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - Accountants']);">Accountants</a></li>
+          <li><a href="/integrations" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - Integrations']);">Integrations</a></li>
+          <li><a href="/developers" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - Developers']);">Developers</a></li>
+          <li class="divider"></li>
+          <li><a href="/careers" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - Careers']);">Careers</a></li>
+          <li class="divider"></li>
+          <li><a href="/faqs" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - FAQs']);">FAQs</a></li>
+          <li><a href="/resources" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - Resources']);">Resources</a></li>
+          <li><a href="https://zenpayroll.com/blog" onClick="_gaq.push(['_trackEvent', 'Top Nav', 'Nav Click', '/ - Blog']);">Blog</a></li>
+        </ul>
+      </li> -->
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a class="sign-in" href="/users/sign_in">Sign In</a>
+      </li>
+    </ul>
   </div>
 </header>
