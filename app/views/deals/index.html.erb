@@ -1,0 +1,14 @@
+<h1>Home</h1>
+<%- if @deals.present? %>
+  <div>
+    <p>Here are your current deals: %>
+    <ul>
+      <%= @deals.each do |deal| %>
+        blah
+      <% end %>
+    </ul>
+  </div>
+<% else %>
+  <p>You don't have any deals yet.</p>
+  <%= link_to "Get Started", '#', class: "btn btn-primary btn-large" %>
+<% end %>

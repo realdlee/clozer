@@ -1,4 +1,5 @@
 Clozer::Application.routes.draw do
+  get "deals/index"
   devise_for :users
   get "pages/home"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,7 +7,7 @@ Clozer::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-
+  resources :deals, only: [:index]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

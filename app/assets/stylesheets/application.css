@@ -16,3 +16,81 @@
 body {
   background: #F0F0ED url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/greybg-e911bd2bca887644020a69bb5aa99f76.jpg") repeat top center;
 }
+
+.space0 { margin-bottom: 6.25px; }
+.space1 { margin-bottom: 12.5px; }
+.space2 { margin-bottom: 25px; }
+.space3 { margin-bottom: 37.5px; }
+.space4 { margin-bottom: 50px; }
+
+
+#hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-d4de06bf48749ba93a7e93571f9e2c38.jpg") no-repeat top center}
+
+#hero.xero-hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/xero-homepage-b78ff25b488cdd1d0ee09bf493c64c9f.jpg") no-repeat top center}#hero.xero-hero .hero-text p{width:85%}
+
+#hero.homepage-video-hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-video-2ddfe7513cd83a6ce14f8b8414a858fa.jpg") no-repeat top center}
+
+#hero.homepage-video-hero a.play-video{margin:20px 0px 0 50px;padding:30px 20px;color:#ffffff;width:500px;height:420px;font-size:2em;font-weight:200;text-align:center;text-indent:-9999px;overflow:hidden;display:block}
+
+#hero .container{min-height:500px}#hero h1{font-size:2.6em;line-height:1em}
+
+#hero .hero-text{margin:80px 0 0;background:transparent;padding:30px 20px;color:#efefef;font-weight:200;position:relative}
+
+#hero .hero-text input,#hero .hero-text button{border:1px solid #37823e;padding:10px 10px;font-weight:400}
+
+#hero .eoy-badge{position:absolute;right:15px;top:0px}
+
+#hero .eoy-badge img{-webkit-transition-duration:1s;-moz-transition-duration:1s;-o-transition-duration:1s;transition-duration:1s;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;transition-property:transform}
+
+#hero .eoy-badge img:hover{-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg)}
+
+#hero #accountant-button{font-weight:700;text-decoration:underline;color:#efefef}
+
+#hero #xero-video{margin:90px 0px 0 100px;padding:30px 20px;width:391px;height:214px}
+
+#hero .view-xero-video a{color:#efefef;font-weight:700;display:none}
+
+@media (min-width: 1200px){#hero #xero-video{margin:90px 0px 0 116px}}
+@media (max-width: 979px) and (min-width: 768px){#hero #xero-video{margin:90px 0px 0 83px}}
+@media (max-width: 767px){#hero.xero-hero .hero-text p{width:50%}
+
+#hero #xero-video{display:none}#hero .view-xero-video a{display:block}}@media (min-width: 768px) and (max-width: 979px){#hero .eoy-badge{left:-40px;right:auto}}
+
+@media (max-width: 767px){#hero.homepage-video-hero a.play-video{margin:20px auto;width:auto;height:180px;padding:0 20px;text-indent:0px;overflow:visible}
+
+#hero.homepage-video-hero a.play-video:hover{text-decoration:none}
+
+#hero .hero-text{background:rgba(0,0,0,0.5);margin-top:60px}
+
+#hero .hero-text h1{font-size:2.2em}
+
+#hero .hero-text button{position:relative;left:-3px}
+
+#hero #accountant-button{color:#efefef;text-decoration:underline;font-weight:700}
+
+#hero .eoy-badge{position:relative}}
+
+@media (max-width: 480px){#hero.homepage-video-hero a.play-video{height:60px;overflow:visible;text-indent:0px}
+
+#hero .hero-text{text-align:center;margin-top:0}
+
+#hero .hero-text #company-input{width:75%;display:block;margin:0 auto}
+
+#hero .hero-text button{width:75%;display:block;margin:0 auto;left:0}}
+
+
+
+
+.ribbon{background:transparent url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/ribbon-background-32027d79fd8f3c0b9c47e74f39e5fcd4.jpg") repeat-x top center;padding:0px}
+
+.ribbon:before,.ribbon:after{content:'';display:block;background:transparent url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/ribbon-stitching-2f2a6b18849f128a2a5dcb4de520c315.png") repeat-x center center;height:12px}
+
+.ribbon .ribbon-text{text-align:center;margin:8px 0;color:#efefef}
+
+.ribbon .ribbon-text h2{font-size:24px;font-weight:200;line-height:28px;margin:0 0 5px}
+
+.ribbon .ribbon-text p{margin-bottom:10px;font-size:16px;line-height:16px;font-weight:200}
+
+.ribbon .ribbon-text a{color:#efefef;margin-left:10px;display:inline-block;font-weight:700}
+
+.ribbon .ribbon-text a:hover{color:#efefef;text-decoration:underline}
