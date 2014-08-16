@@ -10,6 +10,8 @@
 </head>
 <body>
 <%= render 'layouts/navbar' %>
+  <%#= render 'shared/error_messages', object: f.object %>
+
   <%- if params[:action] == 'home' %>
     <%= yield %>
   <% else %>

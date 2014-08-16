@@ -23,6 +23,42 @@ body {
 .space3 { margin-bottom: 37.5px; }
 .space4 { margin-bottom: 50px; }
 
+.navbar {
+  background: #fff;
+}
+
+.error_field { border: 1.5px solid red; }
+
+.icon-ok.check { color: #00FF00; }
+
+.rounded10 { border-radius: 10px; }
+
+.alert {
+  max-width: 480px;
+  font-size: 16px;
+  color: white;
+  li {
+    list-style: disc;
+  }
+}
+
+.alert-danger, .alert-error {
+  background-color: red;
+  opacity: .6;
+
+}
+.alert-success {
+  background-color: #00CC00;
+}
+.container #error_explanation {
+  position: relative;
+  h2 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+
 
 #hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-d4de06bf48749ba93a7e93571f9e2c38.jpg") no-repeat top center}
 
