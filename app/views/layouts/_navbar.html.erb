@@ -1,0 +1,16 @@
+<header class="navbar navbar-fixed-top bs-docs-nav>" role="banner" data-user_signed_in="<%= signed_in? ? 'true' : 'false' %>">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#masthead">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Clozer", root_url, :class => "navbar-brand" %>
+    </div>
+    <nav id="masthead" class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <%#= render 'layouts/navbar_right' %>
+    </nav>
+  </div>
+</header>
