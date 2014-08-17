@@ -29,9 +29,6 @@
     </table>
   </div>
   <div class="forms">
-    <%= render "deals/form" %>
-    <div class="clearfix"></div>
-    <%= render "docs/form", deal: Deal.first %>
   </div>
 
 <% else %>
@@ -39,8 +36,5 @@
   <%= link_to "Get Started", '#', class: "btn btn-primary btn-large", onclick: "" %>
   <div class="clearfix"></div>
   <div class="forms">
-    <%= render "deals/form" %>
-    <div class="clearfix"></div>
-    <%= render "docs/form", deal: Deal.first %>
   </div>
 <% end %>
