@@ -15,7 +15,7 @@ class DealsController < ApplicationController
     @deal = current_user.deals.new(deal_params)
     @deal.save
     logger.info @deal.errors.full_messages if !@deal.valid?
-    redirect_to dashboard_path
+    redirect_to deal_path(@deal)
   end
 
 private
