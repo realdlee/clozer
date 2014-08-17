@@ -12,13 +12,13 @@
       </thead>
       <tbody>
         <% @deals.each do |deal| %>
+          <% percent = rand(10) *10%>
           <tr>
             <td><%= link_to deal.name, deal_path(deal) %></td>
             <td><%= pretty_descriptive_date(deal.created_at) %> (<%= time_ago_in_words(deal.created_at) %> ago)</td>
             <td>
 
             <div class="progress">
-              <% percent = rand(10) *10%>
               <div class="progress-bar" role="progressbar" aria-valuenow="<%= percent.to_s %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= percent.to_s %>%;">
                 <%= percent.to_s %>%
               </div>

@@ -33,6 +33,6 @@ function toggleButtons(that) {
   e.preventDefault();
   $(this).text("Sending...")
   // setTimeout(function(){ toggleButtons()}, 4000);
-  setTimeout(function(){ $(".btn-send-signatories").text('Sent!')}, 4000);
+  setTimeout(function(){ $(".btn-send-signatories").text('Sent!'); $(".sent_at").toggleClass('hide');}, 4000);
 
 });

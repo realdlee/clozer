@@ -14,12 +14,12 @@ c_app.controller('ClozerCtrl', ['$scope', '$http',
     console.log('cal');
   $scope.deal = { id: 1, name: "Tinder Series Z"}
   $scope.docs = [
-    { id: 1, name: "Certificate of Incorporation"},
-    { id: 2, name: "Voting Agreement"},
-    { id: 3, name: "Indemnification Agreement"},
-    { id: 3, name: "Investors Rights Agreement"},
-    { id: 3, name: "Right of First Refusal and Co-Sale Agreement"},
-    { id: 3, name: "Stock Purchase Agreement"}
+    { id: 1, name: "Certificate of Incorporation", sent_at: "08/17/2014"},
+    { id: 2, name: "Voting Agreement", sent_at: "08/17/2014"},
+    { id: 3, name: "Indemnification Agreement", sent_at: "08/17/2014"},
+    { id: 3, name: "Investors Rights Agreement", sent_at: "08/17/2014"},
+    { id: 3, name: "Right of First Refusal and Co-Sale Agreement", sent_at: "08/17/2014"},
+    { id: 3, name: "Stock Purchase Agreement", sent_at: "08/17/2014"}
   ];
   $scope.signatories = [{id: 1, name: "", email: ""}];
   // [

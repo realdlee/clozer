@@ -32,6 +32,8 @@
         <td>
           <span editable-text="signatory.email" e-name="email" e-form="rowform">{{signatory.email || "Please Enter Email"}}
         </td>
+        <td ng-repeat="doc in docs" class="sent_at hide">Sent at: {{doc.sent_at}}
+        </td>
       </tr>
     </tbody>
   </table>
