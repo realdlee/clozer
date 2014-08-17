@@ -1,8 +1,18 @@
-<div class="col-md-4 col-xs-12 col-sm-12">
 <h3>Start a new deal</h3>
-<%= form_for Deal.new do |f| %>
-  <%= f.label :name, "What do you want to name this deal?" %>
-  <%= f.text_field :name, class: "form-control space1" %>
-  <%= f.submit "Save", class: "btn" %>
-<% end %>
+<div class="row">
+  <div class="col-md-4 col-xs-12 col-sm-12">
+  <%= form_for Deal.new do |f| %>
+    <%#= f.label :name, "What do you want to name this deal?" %>
+    <%= f.text_field :name, class: "form-control space1", placeholder: "What do you want to name this deal?" %>
+    <%= f.submit "Save", class: "btn" %>
+  <% end %>
+  </div>
+
+  <!-- <div class="clearfix"></div> -->
+  <div class="col-md-8 col-xs-12 col-sm-12">
+
+    <%= form_for Doc.new do |f| %>
+      <%=f.text_field :name, "data-fp-multiple" => "true", "data-fp-services"=> "COMPUTER","data-fp-button-class"=> "btn btn-mini select_file", "data-fp-button-text"=> "Select Documents", :type => "filepicker-dragdrop","data-fp-drag-text"=> "or drag documents from your computer to this area.", "data-fp-mimetype"=> "", class: "filepicker_field", onchange: "doc_upload(); console.log('works');" %>
+    <% end %>
+  </div>
 </div>

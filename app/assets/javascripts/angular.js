@@ -21,17 +21,18 @@ c_app.controller('ClozerCtrl', ['$scope', '$http',
     { id: 3, name: "Right of First Refusal and Co-Sale Agreement"},
     { id: 3, name: "Stock Purchase Agreement"}
   ];
-  $scope.signatories = [
-      {id: 1, name: 'Elon Musk', email: "dave.0614@gmail.com"},
-      {id: 2, name: 'Mark Zuckerberg', email: "markzuck@facebook.com"},
-      {id: 3, name: 'Winklevoss I', email: "winklevoss@facebook.com"},
-      {id: 4, name: 'Bill Gates', email: "gates@microsoft.com"},
-      {id: 5, name: 'Ashton Kutcher', email: "ashton@ashton.com"},
-      {id: 6, name: 'Sheryl Sandberg', email: "ss@facebook.com"},
-      {id: 7, name: 'LeBron James', email: "king@miamiheat.com"},
-      {id: 8, name: 'Peter Thiel', email: "pt@paypal.com"},
-      {id: 9, name: 'Bruce Wayne', email: "bw@gmail.com" }
-    ];
+  $scope.signatories = [{id: 1, name: "", email: ""}];
+  // [
+  //     {id: 1, name: 'Elon Musk', email: "dave.0614@gmail.com"},
+  //     {id: 2, name: 'Mark Zuckerberg', email: "markzuck@facebook.com"},
+  //     {id: 3, name: 'Winklevoss I', email: "winklevoss@facebook.com"},
+  //     {id: 4, name: 'Bill Gates', email: "gates@microsoft.com"},
+  //     {id: 5, name: 'Ashton Kutcher', email: "ashton@ashton.com"},
+  //     {id: 6, name: 'Sheryl Sandberg', email: "ss@facebook.com"},
+  //     {id: 7, name: 'LeBron James', email: "king@miamiheat.com"},
+  //     {id: 8, name: 'Peter Thiel', email: "pt@paypal.com"},
+  //     {id: 9, name: 'Bruce Wayne', email: "bw@gmail.com" }
+  //   ];
 
   $scope.addSignatory = function() {
     console.log('cal');

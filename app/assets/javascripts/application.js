@@ -14,3 +14,25 @@
 //= require turbolinks
 //= require xeditable.min
 //= require_tree .
+
+
+$(".btn-generate-signatures").click( function(e){
+  e.preventDefault();
+  console.log('hi');
+  $(".btn-generate-signatures").text("Generating...")
+  setTimeout(function(){ toggleButtons()}, 4000);
+});
+
+
+function toggleButtons(that) {
+  $(".btn-generate-signatures").toggleClass("hide")
+  $(".btn-send-signatories").toggleClass("hide");
+};
+
+ $(".btn-send-signatories").click( function(e){
+  e.preventDefault();
+  $(this).text("Sending...")
+  // setTimeout(function(){ toggleButtons()}, 4000);
+  setTimeout(function(){ $(".btn-send-signatories").text('Sent!')}, 4000);
+
+});

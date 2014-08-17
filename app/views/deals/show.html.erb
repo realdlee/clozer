@@ -26,11 +26,11 @@
           </div>
         </td>
         <td>
-          <span editable-text="signatory.name" e-name="name" e-form="rowform" >{{signatory.name || 'Full Name'}}
+          <span editable-text="signatory.name" e-name="name" e-form="rowform" >{{signatory.name || 'Please Enter Full Name'}}
           </span>
         </td>
         <td>
-          <span editable-text="signatory.email" e-name="email" e-form="rowform">{{signatory.email || "Email"}}
+          <span editable-text="signatory.email" e-name="email" e-form="rowform">{{signatory.email || "Please Enter Email"}}
         </td>
       </tr>
     </tbody>
@@ -39,9 +39,9 @@
 </div>
 
 
-<%= link_to "Send to Signatories", '#', :disable_with => 'Sending...', class: "btn btn-success btn-large pull-right" %>
-<%= link_to "Generate Signature Packets", '#', :disable_with => 'Generating...', class: "btn btn-success btn-large pull-right", style: "margin-left: 15px;" %>
-
+<%= link_to "Send to Signatories", '#', class: "btn btn-send-signatories hide btn-success btn-large pull-right" %>
+<%= link_to "Generate Signature Packets", '#', class: "btn btn-generate-signatures btn-success btn-large pull-right", style: "margin-left: 15px; margin-bottom: 100px;" %>
+<div style="margin-bottom: 100px;"></div>
 <% if @deal.docs %>
   <% @deal.docs.each do |doc| %>
     <%= doc.name %>
