@@ -1,0 +1,7 @@
+<div class="col-md-4 col-xs-12 col-sm-12">
+<%= form_for Deal.new do |f| %>
+  <%= f.label :name, "What do you want to name this deal?" %>
+  <%= f.text_field :name, class: "form-control space1" %>
+  <%= f.submit "Save", class: "btn" %>
+<% end %>
+</div>

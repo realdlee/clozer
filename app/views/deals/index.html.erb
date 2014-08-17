@@ -10,5 +10,10 @@
   </div>
 <% else %>
   <p>You don't have any deals yet.</p>
-  <%= link_to "Get Started", '#', class: "btn btn-primary btn-large" %>
+  <%= link_to "Get Started", '#', class: "btn btn-primary btn-large", onclick: "" %>
+  <div class="clearfix"></div>
+  <div class="forms hide">
+    <%= render "deals/form" %>
+    <%= render "docs/form" %>
+  </div>
 <% end %>
