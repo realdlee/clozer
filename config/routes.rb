@@ -7,7 +7,7 @@ Clozer::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-  resources :deals, only: [:index, :create]
+  resources :deals, only: [:index, :create, :show]
   resources :docs, only: [:index, :create]
   match 'dashboard' => 'deals#index', :via => :get, :as => :dashboard
 

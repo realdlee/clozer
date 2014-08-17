@@ -1,0 +1,9 @@
+<h1><%= @deal.name %></h1>
+
+<% if @deal.docs %>
+  <% @deal.docs.each do |doc| %>
+    <%= doc.name %>
+  <% end %>
+<% else %>
+
+<% end %>

@@ -1,19 +1,31 @@
-<h1>Home</h1>
+<h1>Deal Dashboard</h1>
 <%- if @deals.present? %>
   <div>
-    <p>Here are your current deals: %>
-    <ul>
-      <%= @deals.each do |deal| %>
-        blah
-      <% end %>
-    </ul>
+    <p>Here are your current deals:
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Deal</th>
+          <th>Created On</th>
+          <th>Percent Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @deals.each do |deal| %>
+          <td><%= link_to deal.name, deal_path(deal) %></td>
+          <td><%= pretty_descriptive_date(deal.created_at) %> (<%= time_ago_in_words(deal.created_at) %> ago)</td>
+          <td>%</td>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 <% else %>
   <p>You don't have any deals yet.</p>
   <%= link_to "Get Started", '#', class: "btn btn-primary btn-large", onclick: "" %>
   <div class="clearfix"></div>
-  <div class="forms hide">
+  <div class="forms">
     <%= render "deals/form" %>
+    <div class="clearfix"></div>
     <%= render "docs/form" %>
   </div>
 <% end %>

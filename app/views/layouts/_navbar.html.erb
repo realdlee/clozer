@@ -13,9 +13,6 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="corporate-navbar">
     <ul class="nav navbar-nav">
-      <!--<li>-->
-      <!--<a href="/#customers-homepage" class="smooth">Customers</a>-->
-      <!--</li>-->
       <li>
         <a href="/#product" class="smooth" onClick="">Product</a>
       </li>
@@ -42,7 +39,11 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li>
-        <a class="sign-in" href="/users/sign_in">Sign In</a>
+        <%- if user_signed_in? %>
+          <a class="sign-in" href="/users/sign_out">Sign Out</a>
+        <% else %>
+          <a class="sign-in" href="/users/sign_in">Sign In</a>
+        <% end %>
       </li>
     </ul>
   </div>

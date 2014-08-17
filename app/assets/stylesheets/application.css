@@ -61,13 +61,15 @@ body {
     line-height: 18px;
   }
 }
+/*"//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-video-2ddfe7513cd83a6ce14f8b8414a858fa.jpg"*/
+/*"//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-d4de06bf48749ba93a7e93571f9e2c38.jpg"*/
+/*http://unsplash.s3.amazonaws.com/IMG_5803.jpg*/
 
-
-
-#hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-d4de06bf48749ba93a7e93571f9e2c38.jpg") no-repeat top center}
+#hero{background:#000 url("http://unsplash.s3.amazonaws.com/IMG_5803.jpg") no-repeat top center}
 
 #hero.xero-hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/xero-homepage-b78ff25b488cdd1d0ee09bf493c64c9f.jpg") no-repeat top center}#hero.xero-hero .hero-text p{width:85%}
 
+/*hero*/
 #hero.homepage-video-hero{background:#000 url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/zenpayroll-homepage-video-2ddfe7513cd83a6ce14f8b8414a858fa.jpg") no-repeat top center}
 
 #hero.homepage-video-hero a.play-video{margin:20px 0px 0 50px;padding:30px 20px;color:#ffffff;width:500px;height:420px;font-size:2em;font-weight:200;text-align:center;text-indent:-9999px;overflow:hidden;display:block}

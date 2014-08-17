@@ -1,4 +1,8 @@
 <%= form_for Doc.new do |f| %>
-  <%= f.label :name, "Document Name" %>
-  <%= link_to "Upload", '#' %>
+  <%#= f.label :name, "Document Name" %>
+  <%#= f.text_field :name %>
+  <!-- <input type="filepicker-dragdrop" data-fp-multiple="true" class="btn"/> -->
+  <%=f.text_field :name, "data-fp-multiple" => "true", "data-fp-services"=> "COMPUTER","data-fp-button-class"=> "btn btn-mini select_file", "data-fp-button-text"=> "Select Documents", :type => "filepicker-dragdrop","data-fp-drag-text"=> "or drag documents from your computer to this area.", "data-fp-mimetype"=> "image/*" %>
+<!-- "data-fp-drag-class"=> "drop_zone" -->
+<!-- :type => "filepicker-dragdrop" -->
 <% end %>
