@@ -45,6 +45,7 @@ GEM
     filepicker-rails (0.1)
       multi_json (~> 1.6)
       railties (>= 3.1.0, < 5.0)
+    friendly_id (4.0.10)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (1.5.3)
@@ -127,6 +128,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   filepicker-rails
+  friendly_id
   jbuilder (~> 1.2)
   jquery-rails
   pg
