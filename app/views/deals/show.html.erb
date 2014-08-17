@@ -1,9 +1,20 @@
 <h1><%= @deal.name %></h1>
 
+<%= link_to "Add Signatory", '#', class: "btn btn-default " %>
+
+<%= form_for DocumentUser.new do |f| %>
+  <%= label_tag :first_name %>
+  <%= text_field_tag :first_name, nil, {class: "form-control"} %>
+  <%= label_tag :last_name %>
+  <%= text_field_tag :last_name, nil, {class: "form-control"} %>
+<% end %>
+
 <% if @deal.docs %>
   <% @deal.docs.each do |doc| %>
     <%= doc.name %>
   <% end %>
+
+
 <% else %>
   <p>You haven't uploaded any documents yet.</p>
 <% end %>

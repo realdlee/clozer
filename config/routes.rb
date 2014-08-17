@@ -9,6 +9,7 @@ Clozer::Application.routes.draw do
   root 'pages#home'
   resources :deals, only: [:index, :create, :show]
   resources :docs, only: [:index, :create]
+  resources :document_users, only: [:create]
   match 'dashboard' => 'deals#index', :via => :get, :as => :dashboard
 
   # Example of regular route:
