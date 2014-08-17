@@ -4,7 +4,7 @@ class DealsController < ApplicationController
   end
 
   def show
-    @deal = Deal.find(params[:id])
+    @deal = Deal.find(params[:id].split('-')[-1])
     if @deal.user == current_user
     else
       redirect_to root_path

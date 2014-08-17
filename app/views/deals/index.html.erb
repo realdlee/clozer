@@ -19,6 +19,12 @@
       </tbody>
     </table>
   </div>
+  <div class="forms">
+    <%= render "deals/form" %>
+    <div class="clearfix"></div>
+    <%= render "docs/form" %>
+  </div>
+
 <% else %>
   <p>You don't have any deals yet.</p>
   <%= link_to "Get Started", '#', class: "btn btn-primary btn-large", onclick: "" %>
