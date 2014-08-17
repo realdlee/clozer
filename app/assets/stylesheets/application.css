@@ -18,6 +18,9 @@ body {
   background: #F0F0ED url("//d1w32dwlo9psx6.cloudfront.net/assets/corporate/greybg-e911bd2bca887644020a69bb5aa99f76.jpg") repeat top center;
 }
 
+.btn-lg {
+  width: 400px;
+}
 .pull-center {
   margin: 0 auto;
 }

@@ -21,7 +21,7 @@
             <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default btn-xs btn-block">Cancel</button>
           </form>
           <div class="buttons" ng-show="!rowform.$visible">
-            <button class="btn btn-primary btn-xs btn-block" ng-click="rowform.$show()">Edit</button>
+            <button class="btn btn-default btn-xs btn-block" ng-click="rowform.$show()">Edit</button>
             <button class="btn btn-danger btn-xs btn-block" ng-click="removeSignatory($index)">Delete</button>
           </div>
         </td>
@@ -41,8 +41,10 @@
 </div>
 
 
-<%= link_to "Send to Signatories", '#', class: "btn btn-send-signatories hide btn-success btn-large pull-right" %>
-<%= link_to "Generate Signature Packets", '#', class: "btn btn-generate-signatures btn-success btn-large pull-right", style: "margin-left: 15px; margin-bottom: 100px;" %>
+<%= link_to "Send to Signatories", '#', class: "btn btn-send-signatories hide btn-success btn-lg pull-right" %>
+<%= link_to "Generate Signature Packets", '#', class: "btn btn-generate-signatures btn-success btn-lg pull-right", style: "margin-left: 15px; margin-bottom: 100px;" %>
+
+<%= link_to "Return to Dashboard", dashboard_path %>
 <div style="margin-bottom: 100px;"></div>
 <% if @deal.docs %>
   <% @deal.docs.each do |doc| %>
