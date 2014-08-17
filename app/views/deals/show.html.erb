@@ -1,13 +1,46 @@
-<h1><%= @deal.name %></h1>
 
-<%= link_to "Add Signatory", '#', class: "btn btn-default " %>
+<div class="space1" ng-controller="ClozerCtrl">
+  <h1>
+    <a href='#' editable-text="deal.name">{{deal.name || "Deal Name"}}</a>
+  </h1>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr class="dark">
+        <th></th>
+        <th style="width:40%;">Name</th>
+        <th style="width:40%;">Email</th>
+        <th ng-repeat="doc in docs">{{doc.name}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="signatory in signatories">
+        <td>
+          <!-- "saveSignatory($data, signatory.id)" -->
+          <form editable-form name="rowform" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == signatory">
+            <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary btn-xs btn-block">Save</button>
+            <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default btn-xs btn-block">Cancel</button>
+          </form>
+          <div class="buttons" ng-show="!rowform.$visible">
+            <button class="btn btn-primary btn-xs btn-block" ng-click="rowform.$show()">Edit</button>
+            <button class="btn btn-danger btn-xs btn-block" ng-click="removeSignatory($index)">Delete</button>
+          </div>
+        </td>
+        <td>
+          <span editable-text="signatory.name" e-name="name" e-form="rowform" >{{signatory.name || 'Full Name'}}
+          </span>
+        </td>
+        <td>
+          <span editable-text="signatory.email" e-name="email" e-form="rowform">{{signatory.email || "Email"}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-xs btn-primary" ng-click="addSignatory()">Add Signatory</a>
+</div>
 
-<%= form_for DocumentUser.new do |f| %>
-  <%= label_tag :first_name %>
-  <%= text_field_tag :first_name, nil, {class: "form-control"} %>
-  <%= label_tag :last_name %>
-  <%= text_field_tag :last_name, nil, {class: "form-control"} %>
-<% end %>
+
+<%= link_to "Send to Signatories", '#', :disable_with => 'Sending...', class: "btn btn-success btn-large pull-right" %>
+<%= link_to "Generate Signature Packets", '#', :disable_with => 'Generating...', class: "btn btn-success btn-large pull-right", style: "margin-left: 15px;" %>
 
 <% if @deal.docs %>
   <% @deal.docs.each do |doc| %>

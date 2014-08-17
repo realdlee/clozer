@@ -1,4 +1,4 @@
-  console.log('hi');
+console.log('hi');
 
 $('input.filepicker_field').change(function(e){
 // function doc_upload(e) {

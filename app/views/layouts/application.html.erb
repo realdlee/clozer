@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="c_app">
 <head>
   <title>Clozer</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', :media => "all" %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag ANGULAR_CDN %>
+  <%= javascript_include_tag ANGULAR_UI_BOOTSTRAP_CDN %>
+  <%#= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/js/bootstrap-editable.js" %>
 
   <%= csrf_meta_tags %>
 </head>
@@ -20,6 +22,7 @@
     </div>
   <% end %>
 <%#= javascript_include_tag JQUERY_CDN %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
 <script type="text/javascript" src="//s3.amazonaws.com/cdn.hellofax.com/js/embedded.js"></script>
 <script type="text/javascript">
